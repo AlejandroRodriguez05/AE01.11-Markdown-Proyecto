@@ -73,7 +73,7 @@ La versión ~~1.0.0~~ de la documentación fue sustituida por esta versión ***d
 
 <a id="tecnologias"></a>
 
-# 🧰 Tecnologías y requisitos [⬆️](#indice "Volver al índice")
+# Tecnologías y requisitos [⬆️](#indice "Volver al índice")
 
 El proyecto se ha construido con las siguientes herramientas:
 
@@ -100,7 +100,7 @@ El proyecto se ha construido con las siguientes herramientas:
 
 <a id="arquitectura"></a>
 
-# 🏗️ Arquitectura del proyecto [⬆️](#indice "Volver al índice")
+# Arquitectura del proyecto [⬆️](#indice "Volver al índice")
 
 ## 📁 Estructura de carpetas
 
@@ -127,7 +127,7 @@ AeApplicationManager/
     └── Resources/applications.json
 ```
 
-## 🧩 Diagrama de clases (núcleo)
+## Diagrama de clases (núcleo)
 
 ```mermaid
 classDiagram
@@ -175,7 +175,7 @@ classDiagram
     installerWorker ..> ApplicationModel : actualiza progreso
 ```
 
-## 🔄 Flujo de una instalación
+## Flujo de una instalación
 
 ```mermaid
 flowchart TD
@@ -193,7 +193,7 @@ flowchart TD
     J --> K([Aplicación instalada])
 ```
 
-## 📡 Secuencia de señales y slots
+## Secuencia de señales y slots
 
 ```mermaid
 sequenceDiagram
@@ -216,7 +216,7 @@ sequenceDiagram
     M-->>U: La vista se repinta
 ```
 
-## 🔁 Estados de una aplicación
+## Estados de una aplicación
 
 ```mermaid
 stateDiagram-v2
@@ -236,9 +236,9 @@ stateDiagram-v2
 
 <a id="funcionalidades"></a>
 
-# ✨ Funcionalidades [⬆️](#indice "Volver al índice")
+# Funcionalidades [⬆️](#indice "Volver al índice")
 
-## 🛒 Gestión de aplicaciones
+##  Gestión de aplicaciones
 
 - 📥 **Descargar / instalar** aplicaciones con barra de progreso.
 - 🗑️ **Desinstalar** aplicaciones instaladas.
@@ -363,9 +363,9 @@ QListView {
 
 <a id="modelo-datos"></a>
 
-# 📐 Modelo de datos y fórmulas [⬆️](#indice "Volver al índice")
+# Modelo de datos y fórmulas [⬆️](#indice "Volver al índice")
 
-## 📊 Aplicaciones incluidas
+## Aplicaciones incluidas
 
 | Id | Aplicación | Ejecutable  | Caduca     | Versiones |  Tamaño más reciente (MB) |
 | -: | :--------- | :---------- | :--------: | :-------: | ------------------------: |
@@ -441,7 +441,7 @@ int diasRestantes = QDate::currentDate().daysTo(application.expirationDate());
   - [ ] Pruebas en otros compiladores
 - [ ] Añadir pruebas unitarias del modelo
 
-## 📅 Diagrama de Gantt (inventado)
+## Diagrama de Gantt (inventado)
 
 ```mermaid
 gantt
@@ -488,7 +488,16 @@ Iconos de las aplicaciones incluidas (carpeta [`application-desktop/apps`](appli
   </tr>
 </table>
 
-Iconos de la interfaz: ![Corazón](application-desktop/Corazon.png "Favorita") ![Corazón seleccionado](application-desktop/CorazonSeleccionado.png "Favorita seleccionada") ![Información](application-desktop/Icon_Info.png "Información") ![Descarga](application-desktop/Icon_Download.png "Descarga")
+Iconos de la interfaz:
+
+<table>
+  <tr align="center">
+    <td><img src="application-desktop/Corazon.png" alt="Corazón" width="90"><br><b>Favorita</b></td>
+    <td><img src="application-desktop/CorazonSeleccionado.png" alt="Corazón seleccionado" width="90"><br><b>Favorita seleccionada</b></td>
+    <td><img src="application-desktop/Icon_Info.png" alt="Información" width="90"><br><b>Información</b></td>
+    <td><img src="application-desktop/Icon_Download.png" alt="Descarga" width="90"><br><b>Descarga</b></td>
+  </tr>
+</table>
 
 ## 🔗 Enlaces a archivos del proyecto
 
@@ -502,23 +511,23 @@ Iconos de la interfaz: ![Corazón](application-desktop/Corazon.png "Favorita") !
 
 ## 💬 Citas relacionadas
 
-> “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”
+> “Cualquier tonto puede escribir código que un ordenador entienda. Los buenos programadores escriben código que las personas puedan entender.”
 >
-> — **Martin Fowler**, *Refactoring*
+> — **Martin Fowler**, autor de *Refactoring* (traducción)
 
-> “Within C++, there is a much smaller and cleaner language struggling to get out.”
+> “Dentro de C++ hay un lenguaje mucho más pequeño y limpio que lucha por salir.”
 >
-> — **Bjarne Stroustrup**, creador de C++
+> — **Bjarne Stroustrup**, creador de C++ (traducción)
 
-> “Talk is cheap. Show me the code.”
+> “Hablar es barato. Enséñame el código.”
 >
-> — **Linus Torvalds**
+> — **Linus Torvalds**, creador de Linux (traducción)
 
 ---
 
 <a id="conclusiones"></a>
 
-# 🏁 Conclusiones y créditos [⬆️](#indice "Volver al índice")
+# Conclusiones y créditos [⬆️](#indice "Volver al índice")
 
 Con este proyecto se han aplicado conceptos importantes de **Qt** y **C++ moderno**: arquitectura *Model/View*, delegados personalizados, modelos *proxy*, lectura de JSON y programación con **hilos**.\
 Queda como mejora futura conectar la aplicación con descargas reales y ampliar la compatibilidad con otros sistemas operativos.
