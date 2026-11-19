@@ -227,7 +227,6 @@ stateDiagram-v2
     Desinstalando --> Disponible : Progreso 100 %
     Instalada --> Favorita : Me gusta
     Favorita --> Instalada : Quitar me gusta
-    Instalada --> [*]
 ```
 
 > [!IMPORTANT]
@@ -465,7 +464,6 @@ gantt
 
 # 🖼️ Galería y recursos [⬆️](#indice "Volver al índice")
 
-## 🌐 Imágenes de Internet
 
 | Qt | C++ |
 | :-: | :-: |
@@ -536,7 +534,7 @@ Queda como mejora futura conectar la aplicación con descargas reales y ampliar 
 - [Mermaid](https://mermaid.js.org/ "Documentación de Mermaid")
 
 <p align="center">
-  <sub>Hecho con ❤️ y ☕ · AE01_07 · Markdown</sub>
+  <sub>AE01_11 · Markdown</sub>
 </p>
 
 [⬆️ Volver al índice](#indice "Ir al índice")
